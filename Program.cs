@@ -1,9 +1,12 @@
-﻿using HttpProject;
+﻿using HttpProject.Server;
 
-class Program
+var server = new HttpServer();
+
+Console.CancelKeyPress += (sender, e) =>
 {
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hellp World");
-    }
-}
+    e.Cancel = true;
+    server.Stop();
+    Console.WriteLine("Сервер остановлен");
+};
+
+server.Start();
