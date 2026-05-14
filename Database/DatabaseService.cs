@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 using System.IO;
 using Microsoft.Data.Sqlite;
@@ -62,3 +63,4 @@ namespace HttpProject.Database
         }
     }
 }
+
